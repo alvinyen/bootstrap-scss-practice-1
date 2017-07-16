@@ -2,7 +2,16 @@ html, body {
     margin: 0;
     padding: 0;
 }
-#app {
-    height: 200px;
-    background-color: blue;
+* {
+    // border: 2px solid red;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+}
+header.jumbotron {
+    color: #F1F2EC;
+    // color: #81A3A7;
+    background-image: url(https://c1.staticflickr.com/8/7337/11111460673_fd95569c50_b.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 160px 0;
 }
