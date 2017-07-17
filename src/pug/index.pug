@@ -2,11 +2,25 @@
 html(lang="en")
 head
     meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title 斜陽，暮光
+    link(rel="shortcut icon", href="favicon.ico")
+
+    meta(name="description" content="關於夕陽、日暮、屬於你的浪漫")
+    meta(name="keywords" content="夕陽, 日暮, alvinyen219, 照銓, 顏照銓 ")
+
+    meta(property="og:title" content="夕陽, 日暮")
+    meta(property="og:description" content="關於夕陽、日暮、屬於你的浪漫")
+    meta(property="og:type" content="website")
+    meta(property="og:url" content="sunset.alvinyen.me")
+    meta(property="og:image" content="https://i.imgur.com/bZPnUXV.png")
+    
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title bootstrap-scss-practice-1
-    link(rel="stylesheet", href="all.css", type="text/css")
+
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    link(rel="stylesheet", href="all.css", type="text/css")
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 body
     header.jumbotron
@@ -17,7 +31,7 @@ body
         .container
             .row
                 .col-md-12
-                    h2.section-title 上一次出神的望著夕陽是什麼時候呢？
+                    h2.section-title 上一次出神地望著夕陽是什麼時候呢？
                     h3.section-subtitle 上一次看見日暮，仍然紅的艷人
             .row
                 .col-md-4.col-sunset
@@ -41,11 +55,11 @@ body
                     h3.section-subtitle 日落的過程，並不那麼簡單
             .row
                 .col-md-6
-                    .h2 光線在大氣層內的折射
-                    .content 下沉的陽光路線在接近地平線的附近已經被高度的偏折，使得視太陽日沒時，真實的太陽已經在地平線下約一個太陽的直徑（約0.5°）
+                    .h3 光線在大氣層內的折射
+                    .content 日落時間在天文學上的定義是太陽盤面的邊緣完全消逝在西方地平線下的時間。由於光線在大氣層內的折射，下沉的陽光路線在接近地平線的附近已經被高度的偏折，使得視太陽日沒時，真實的太陽已經在地平線下約一個太陽的直徑（約0.5°）
                 .col-md-6
-                    .h2 日沒不能與薄暮（dusk）混淆
-                    .content 這是黑暗降臨的時刻，此刻太陽位於地平線下18°。從日沒到薄暮的期間稱為暮光。
+                    .h3 日沒不能與薄暮（dusk）混淆
+                    .content 薄暮是黑暗降臨的時刻，此刻太陽位於地平線下18°。從日沒到薄暮的期間稱為暮光。在這個時段，物體仍然能被辨識，但是沒有足夠的光線從事戶外的活動。航海薄暮是黃昏後太陽低於地平線下12度之前的時段。在這個時段，物體不再能被辨識，並且地平線也不再容易的以肉眼看清楚。在這個時段之後，陽光將不再照亮天空。
     section.pictures
         .container-fluid
             .row
@@ -56,7 +70,7 @@ body
                 .col-md-6.pic2
                     .text-panel
                         .h1 日落當下的雲隙光
-                        p 從雲霧的邊緣射出的陽光，照亮空氣中的灰塵而使光芒清晰可見
+                        p 雲霧邊緣射出的陽光，照亮空氣中的灰塵使光芒清晰可見
     section.ask
         .container
             .row

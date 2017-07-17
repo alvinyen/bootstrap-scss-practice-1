@@ -9,7 +9,7 @@ const livereload = require('gulp-livereload');
 const stylePath = { src: './src/scss/**/*.scss', dest: './dist' };
 const pugPath = { src: './src/pug/**/*.pug', dest: './dist' };
 const jsPath = { src: './src/js/**/*.js', dest: './dist' };
-const imagePath = { src: './src/images/*.+(png|jpg)', dest: './dist/images' };
+const imagePath = { src: './src/images/*.*', dest: './dist/images' };
 
 gulp.task('sass', () => {
   return gulp.src(stylePath.src)
@@ -27,6 +27,13 @@ gulp.task('pug', () => {
     .pipe(connect.reload());
 });
 
+// gulp-imagemin
+gulp.task('images', () => {
+  return gulp.src(imagePath.src)
+    .pipe(imagemin()) // minify images
+    .pipe(gulp.dest(imagePath.dest)); // why images minify doesn't need connect.reload？？
+});
+
 gulp.task('watch', () => {
   gulp.watch(pugPath.src, ['pug']);
   gulp.watch(stylePath.src, ['sass']);
@@ -40,4 +47,4 @@ gulp.task('server', () => {
   });
 });
 
-gulp.task('default', ['sass', 'pug', 'watch', 'server']);
+gulp.task('default', ['sass', 'pug', 'images', 'watch', 'server']);

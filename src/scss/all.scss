@@ -67,6 +67,9 @@ section.story {
     .col-md-6 {
         padding: 20px;
     }
+    .content {
+        line-height: 26px;
+    }
 }
 
 section.pictures {
@@ -107,7 +110,9 @@ section.pictures {
                 opacity: 0.8;
             }
             &::before {
-                width: 130%;
+                // !! 不要設定錯了 !! 要讓background-size放大，而不是before pseudo element放大 !!
+                // width: 135%;
+                background-size: 150%;
                 filter: brightness(0.5);
             }
         }
