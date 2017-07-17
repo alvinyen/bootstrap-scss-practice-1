@@ -1,3 +1,14 @@
+// for debug
+body {
+    section, header {
+        // display: none;
+    }
+    section.story {
+        display: block;
+    }
+}
+
+
 html, body {
     margin: 0;
     padding: 0;
@@ -6,7 +17,10 @@ html, body {
     // border: 2px solid red;
     box-sizing: border-box;
     font-family: 微軟正黑體;
+    text-align: center;
 }
+
+
 
 header.jumbotron {
     color: #F1F2EC;
@@ -18,7 +32,7 @@ header.jumbotron {
 }
 
 section.intro {
-    text-align: center;
+    // text-align: center;
     padding: 80px 0px;
     .section-title {
         font-size: 36px;
@@ -39,4 +53,16 @@ section.intro {
         }
     }
 }
+
+section.story {
+    background-color: #eee;
+    img.icon-sunset {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    .col-md-6 {
+        padding: 20px;
+    }
+}
+
 
