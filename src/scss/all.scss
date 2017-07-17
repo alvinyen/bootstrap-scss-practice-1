@@ -1,9 +1,9 @@
 // for debug
 body {
     section, header {
-        // display: none;
+        display: none;
     }
-    section.story {
+    section.pictures {
         display: block;
     }
 }
@@ -64,5 +64,70 @@ section.story {
         padding: 20px;
     }
 }
+
+section.pictures {
+    color: white;
+    .col-md-6 {
+        padding: 150px;
+        background-size: cover;
+        background-position: center center;
+        p {
+            opacity: 0.6;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            // border: 5px solid black;
+
+            // 因為包在bootstrap的class裡面，預設會置中顯示
+            // 測試before
+            // 為了要讓圖片從左上角開始掛，所以要轉為absolute去做操作
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            z-index: -1;
+
+            // transition要給在漸變的標的本身，而不是hover等pseudo element，這樣才會hover時才會運作
+            transition-duration: 0.5s;
+
+            // 使漸變的原點從中央開始，而非左上角
+            background-position: center center;
+        }
+
+        &:hover {
+            p {
+                opacity: 0.8;
+            }
+            &::before {
+                width: 130%;
+                filter: brightness(0.5);
+            }
+        }
+    }
+    .pic1 {
+        // background-image: url(http://static.ettoday.net/images/2666/2666332.jpg);
+        &::before {
+            background-image: url(http://static.ettoday.net/images/2666/2666332.jpg);
+            
+            // 因為背景圖片大小會不一樣，所以也是在區塊客製化的部分做設定
+            // 給超過100%，使避免圖片重複的問題
+            background-size: 130% auto; 
+        }
+    }
+    .pic2 {
+        &::before {
+           background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/%E6%B7%A1%E6%B0%B4%E7%9A%84%E8%80%B6%E7%A9%8C%E5%85%89P1090153.jpg/800px-%E6%B7%A1%E6%B0%B4%E7%9A%84%E8%80%B6%E7%A9%8C%E5%85%89P1090153.jpg); 
+           
+           // 因為背景圖片大小會不一樣，所以也是在區塊客製化的部分做設定
+           // 給超過100%，使避免圖片重複的問題
+           background-size: 120% auto;
+        }
+    }
+}
+
 
 
