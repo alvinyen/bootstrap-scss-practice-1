@@ -32,10 +32,11 @@ gulp.task('watch', () => {
   gulp.watch(stylePath.src, ['sass']);
 });
 
+// gulp-connect, server, live-reload
 gulp.task('server', () => {
   connect.server({
     root: './dist',
-    liveereload: true,
+    livereload: true,
   });
 });
 
