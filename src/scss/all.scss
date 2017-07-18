@@ -86,7 +86,7 @@ section.pictures {
             content: "";
             display: block;
             width: 100%;
-            height: 100%;
+            height: 480px; // 100%
             // border: 5px solid black;
 
             // 因為包在bootstrap的class裡面，預設會置中顯示
@@ -103,6 +103,7 @@ section.pictures {
 
             // 使漸變的原點從中央開始，而非左上角
             background-position: center center;
+
         }
 
         &:hover {
@@ -112,7 +113,7 @@ section.pictures {
             &::before {
                 // !! 不要設定錯了 !! 要讓background-size放大，而不是before pseudo element放大 !!
                 // width: 135%;
-                background-size: 150%;
+                background-size: 180%;
                 filter: brightness(0.5);
             }
         }
@@ -124,7 +125,7 @@ section.pictures {
             
             // 因為背景圖片大小會不一樣，所以也是在區塊客製化的部分做設定
             // 給超過100%，使避免圖片重複的問題
-            background-size: 130% auto; 
+            background-size: 150% auto; 
         }
     }
     .pic2 {
@@ -133,7 +134,7 @@ section.pictures {
            
            // 因為背景圖片大小會不一樣，所以也是在區塊客製化的部分做設定
            // 給超過100%，使避免圖片重複的問題
-           background-size: 120% auto;
+           background-size: 150% auto;
         }
     }
 }
