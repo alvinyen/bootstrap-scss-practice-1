@@ -32,7 +32,6 @@
     - text-center // 懶寫css好用
 - padding型技巧
     - 向內padding
-        - ![](https://i.imgur.com/lKNClwU.png)
     - 向外padding
 - 圖片
     - background-size： cover;
@@ -92,8 +91,8 @@
 
 ### [ section.story ]
 - 關於h1~h6的層級
-    - 如下，前面已經用過h2、h3，在接下來為了避免h1~h6的層級錯亂，在需要h2和h3之類的字級的地方可以<font color=red>使用一般的區塊+boorstrap內建的.h1~.h6 class</font>來達成需求
-        - ![](https://i.imgur.com/Yqk1in6.png)
+    - 如下，前面已經用過h2、h3，在接下來為了避免h1到h6的層級錯亂，在需要h2和h3之類的字級的地方可以使用一般的區塊+boorstrap內建的.h1到.h6 class來達成需求
+        - ![](https://i.imgur.com/6YdkaQq.png)
 - section和section.xxx
     - section
         - css的共同設定
