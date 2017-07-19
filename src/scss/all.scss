@@ -113,7 +113,7 @@ section.pictures {
             &::before {
                 // !! 不要設定錯了 !! 要讓background-size放大，而不是before pseudo element放大 !!
                 // width: 135%;
-                background-size: 180%;
+                background-size: 210%;
                 filter: brightness(0.5);
             }
         }
@@ -125,7 +125,7 @@ section.pictures {
             
             // 因為背景圖片大小會不一樣，所以也是在區塊客製化的部分做設定
             // 給超過100%，使避免圖片重複的問題
-            background-size: 150% auto; 
+            background-size: 175% auto; 
         }
     }
     .pic2 {
@@ -134,7 +134,8 @@ section.pictures {
            
            // 因為背景圖片大小會不一樣，所以也是在區塊客製化的部分做設定
            // 給超過100%，使避免圖片重複的問題
-           background-size: 150% auto;
+           background-size: 160% auto;
+           
         }
     }
 }
